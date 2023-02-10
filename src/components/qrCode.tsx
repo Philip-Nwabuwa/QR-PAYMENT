@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { InputContext } from "./home";
+import { InputContext } from "../pages/home";
 import { saveAs } from "file-saver";
 
 const qrCode = () => {

@@ -1,4 +1,4 @@
-import { InputContext } from "./home";
+import { InputContext } from "../pages/home";
 import { useContext } from "react";
 
 const inputField = () => {

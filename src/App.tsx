@@ -1,16 +1,13 @@
-import Footer from "./components/footer";
-import Home from "./components/home";
-import Navbar from "./components/navbar";
-// import Login from "./pages/Login";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import Landing from "./pages/landing";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      {/* <Login /> */}
-      <Home />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/home" element={<Home />} />
+    </Routes>
   );
 };
 

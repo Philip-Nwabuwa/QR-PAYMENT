@@ -1,7 +1,8 @@
 import axios from "axios";
 import { createContext, useState } from "react";
-import InputForm from "./inputForm";
-import QrCode from "./qrCode";
+import InputForm from "../components/inputForm";
+import Navbar from "../components/navbar";
+import QrCode from "../components/qrCode";
 
 // context
 export const InputContext = createContext<any>(null);
@@ -43,16 +44,13 @@ const home = () => {
   const value = { inputValue, setInputValue, getQrCode, res, loading, error };
 
   return (
-    <div className="bg-gray-400 h-screen pt-3 px-2">
-      <div className="container mx-auto max-w-4xl bg-white rounded-lg shadow-md">
-        <div className="md:grid md:grid-cols-3">
-          <InputContext.Provider value={value}>
-            <InputForm />
-            <QrCode />
-          </InputContext.Provider>
-        </div>
-      </div>
-    </div>
+    <section>
+      <Navbar />
+      <InputContext.Provider value={value}>
+        <InputForm />
+        <QrCode />
+      </InputContext.Provider>
+    </section>
   );
 };
 
