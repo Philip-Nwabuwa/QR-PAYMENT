@@ -37,7 +37,7 @@ const Navbar = () => {
           </div>
           <button className="md:flex hidden">
             <a
-              href="/home"
+              href="/generator"
               className="bg-white text-black px-6 py-3 font-bold rounded-md hover:bg-gray-200 hover:underline"
             >
               Get Started
