@@ -6,25 +6,32 @@ const landing = () => {
   return (
     <div>
       <Navbar />
-      <div className="w-full h-full py-24 bg-slate-800">
-        <div className="flex flex-col w-[80%] justify-center items-center mx-auto">
-          <h1 className="text-4xl font-bold text-white">
-            Create Your Free QR Codes
-          </h1>
-          <p className="mt-3 text-xl text-white">
-            Create your free QR codes in seconds. No registration required. No
-            ads. No tracking. No nonsense. Use QR codes to drive traffic and
-            increase sales when customers scan your printed or digital code.
-          </p>
-          <button className="mt-12">
-            <a
-              href="/generator"
-              className="bg-white text-black px-16 py-4 font-bold rounded-xl hover:bg-gray-200 hover:underline"
-            >
-              Get Started
-            </a>
-          </button>
-          <img className="mt-6 rounded-xl" src={QR} alt="Qr Image" />
+      <div className="w-full h-full py-24 bg-slate-800 ">
+        <div className="md:grid md:grid-cols-3 md:gap-2 flex flex-col w-[80%] justify-center items-center mx-auto">
+          <div className="md:col-span-2 flex flex-col justify-center items-center mx-auto">
+            <h1 className=" text-4xl font-bold text-white">
+              Create Your Free QR Codes
+            </h1>
+            <p className=" mt-3 text-xl text-white">
+              Create your free QR codes in seconds. No registration required. No
+              ads. No tracking. No nonsense. Use QR codes to drive traffic and
+              increase sales when customers scan your printed or digital code.
+            </p>
+            <button className="mt-12">
+              <a
+                href="/generator"
+                className="bg-white text-black px-16 py-4 font-bold rounded-xl hover:bg-gray-200 hover:underline"
+              >
+                Get Started
+              </a>
+            </button>
+          </div>
+
+          <img
+            className="mt-6 rounded-xl md:grid-cols-3"
+            src={QR}
+            alt="Qr Image"
+          />
         </div>
         <section>
           <div className="flex flex-col w-[80%] justify-center items-center mx-auto">
