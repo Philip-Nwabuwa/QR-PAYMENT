@@ -6,7 +6,7 @@ const landing = () => {
   return (
     <div>
       <Navbar />
-      <div className="w-full h-full pt-24 bg-slate-800">
+      <div className="w-full h-full py-24 bg-slate-800">
         <div className="flex flex-col w-[80%] justify-center items-center mx-auto">
           <h1 className="text-4xl font-bold text-white">
             Create Your Free QR Codes
