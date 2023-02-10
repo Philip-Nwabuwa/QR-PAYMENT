@@ -58,10 +58,10 @@ const Navbar = () => {
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-slate-800 text-white font-bold p-4 pl-5 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-4 pl-5 ease-in duration-500"
+              : "fixed left-[-200%] top-0 ease-in duration-500"
           }
         >
-          <div className="z-[100] mt-6">
+          <div className="z-[100] mt-6 ">
             <div className="flex w-full items-center justify-between">
               <div className="text-3xl font-bold hover:underline">
                 <a href="/">QR Generator</a>{" "}
