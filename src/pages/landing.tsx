@@ -7,8 +7,8 @@ const landing = () => {
     <div>
       <Navbar />
       <div className="w-full h-full py-24 bg-slate-800 ">
-        <div className="md:grid md:grid-cols-3 md:gap-2 flex flex-col w-[80%] justify-center items-center mx-auto">
-          <div className="md:col-span-2 flex flex-col justify-center items-center mx-auto">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-2 flex flex-col w-[80%] justify-center items-center mx-auto">
+          <div className="xl:col-span-2 flex flex-col justify-center items-center mx-auto">
             <h1 className=" text-4xl font-bold text-white">
               Create Your Free QR Codes
             </h1>
@@ -28,7 +28,7 @@ const landing = () => {
           </div>
 
           <img
-            className="mt-6 rounded-xl md:grid-cols-3"
+            className="mt-6 rounded-xl xl:grid-cols-3"
             src={QR}
             alt="Qr Image"
           />
