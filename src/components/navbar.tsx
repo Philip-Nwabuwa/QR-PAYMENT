@@ -72,7 +72,7 @@ const Navbar = () => {
               </div>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg p-1  border-2  cursor-pointer hover:scale-105 ease-in duration-300"
+                className="rounded-full shadow-lg p-1 cursor-pointer hover:scale-105 ease-in duration-300"
               >
                 <AiOutlineClose size={30} className="text-white" />
               </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
               <Link to="https://www.qrcode-tiger.com/api-documentation">
                 <li className="py-6 text-2xl tracking-widest">Docs</li>
               </Link>
-              <Link to="/">
+              <Link to="/about">
                 <li className="py-6 text-2xl tracking-widest">About</li>
               </Link>
             </ul>
