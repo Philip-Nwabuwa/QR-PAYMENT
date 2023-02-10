@@ -47,7 +47,7 @@ const home = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-slate-800 h-screen">
+      <section className="bg-slate-800 h-screen pt-24">
         <InputContext.Provider value={value}>
           <InputForm />
           <QrCode />
