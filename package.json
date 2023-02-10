@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://QR-Payment.github.io/",
+  "homepage": "https://Philip-Nwabuwa.github.io/Qr-Payment",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
