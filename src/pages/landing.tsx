@@ -16,7 +16,6 @@ const landing = () => {
             ads. No tracking. No nonsense. Use QR codes to drive traffic and
             increase sales when customers scan your printed or digital code.
           </p>
-          <img className="mt-6 rounded-xl" src={QR} alt="Qr Image" />
           <button className="mt-12">
             <a
               href="/generator"
@@ -25,6 +24,7 @@ const landing = () => {
               Get Started
             </a>
           </button>
+          <img className="mt-6 rounded-xl" src={QR} alt="Qr Image" />
         </div>
         <section>
           <div className="flex flex-col w-[80%] justify-center items-center mx-auto">
