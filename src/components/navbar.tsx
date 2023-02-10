@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import {
+  AiOutlineClose,
+  AiOutlineMail,
+  AiOutlineMenu,
+  AiOutlineTwitter,
+} from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -28,9 +32,9 @@ const Navbar = () => {
                   Docs
                 </li>
               </Link>
-              <Link to="/">
+              <Link to="/about">
                 <li className="ml-10 text-xl uppercase hover:text-slate-400 hover:border-b">
-                  Contact
+                  About
                 </li>
               </Link>
             </ul>
@@ -94,16 +98,24 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-6 w-full sm-[80%]">
                 <div className="rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <a href="https://www.linkedin.com/in/philip-nwabuwa-5137a2200/">
+                    <FaLinkedinIn />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <a href="https://github.com/Philip-Nwabuwa" target={"_blank"}>
+                    <FaGithub />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
+                  <a href="mailto: philipnwabuwa@gmail.com" target={"_blank"}>
+                    <AiOutlineMail />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
+                  <a href="https://twitter.com/Philip_john64" target={"_blank"}>
+                    <AiOutlineTwitter />
+                  </a>
                 </div>
               </div>
             </div>
