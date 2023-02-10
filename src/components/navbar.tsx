@@ -1,13 +1,19 @@
 import { AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
   return (
-    <div className="bg-slate-900 text-white w-full h-16 flex items-center justify-center uppercase">
-      <div className="flex w-[95%] justify-between items-center">
-        <div className="text-2xl">QR Generator</div>
-        <ul className="md:flex items-center hidden">
-          <li className="pr-2">about</li>
-          <li className="pr-2">Docs</li>
-          <li>contact</li>
+    <div className="bg-slate-900 text-white w-full h-[70px] flex items-center justify-center uppercase">
+      <div className="flex w-[90%] justify-between items-center">
+        <div className="text-3xl font-bold  hover:underline">
+          <a href="/">QR Generator</a>{" "}
+        </div>
+        <ul className="md:flex items-center hidden text-xl font-bold">
+          <li className="pr-6 hover:text-slate-400 hover:underline">about</li>
+          <a
+            className="hover:text-slate-400 hover:underline"
+            href="https://www.qrcode-tiger.com/api-documentation"
+          >
+            Docs
+          </a>
         </ul>
         <button className="md:flex hidden">
           <a

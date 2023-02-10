@@ -7,7 +7,7 @@ const landing = () => {
     <div>
       <Navbar />
       <div className="w-full h-full py-9 bg-slate-800">
-        <div className="flex flex-col w-[90%] justify-center items-center mx-auto">
+        <div className="flex flex-col w-[80%] justify-center items-center mx-auto">
           <h1 className="text-4xl font-bold text-white">
             Create Your Free QR Codes
           </h1>
@@ -19,7 +19,7 @@ const landing = () => {
           <img className="mt-6 rounded-xl" src={QR} alt="Qr Image" />
           <button className="mt-12">
             <a
-              href="/home"
+              href="/generator"
               className="bg-white text-black px-16 py-4 font-bold rounded-xl hover:bg-gray-200 hover:underline"
             >
               Get Started
@@ -27,7 +27,7 @@ const landing = () => {
           </button>
         </div>
         <section>
-          <div className="flex flex-col w-[90%] justify-center items-center mx-auto">
+          <div className="flex flex-col w-[80%] justify-center items-center mx-auto">
             <h2 className="text-4xl font-bold text-white mt-20">
               What is a QR Code?
             </h2>

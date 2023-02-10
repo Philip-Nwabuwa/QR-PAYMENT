@@ -17,14 +17,18 @@ const inputColor = () => {
 
   return (
     <div>
-      <label className="font-bold uppercase">pick a color</label>
+      <div className="py-3">
+        <label className="font-bold uppercase text-white text-2xl">
+          pick a color
+        </label>
+      </div>
       <div className="flex items-center gap-2">
         <div
           onClick={() => setColorPicker(!ColorPicker)}
           style={{ backgroundColor: color }}
           className="w-10 h-8 cursor-pointer border-2"
         ></div>
-        <span>{color}</span>
+        <span className="text-white text-2xl">{color}</span>
       </div>
       {ColorPicker && (
         <div className="absolute mt-2">

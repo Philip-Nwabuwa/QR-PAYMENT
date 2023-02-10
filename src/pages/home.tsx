@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createContext, useState } from "react";
+import Footer from "../components/footer";
 import InputForm from "../components/inputForm";
 import Navbar from "../components/navbar";
 import QrCode from "../components/qrCode";
@@ -44,13 +45,16 @@ const home = () => {
   const value = { inputValue, setInputValue, getQrCode, res, loading, error };
 
   return (
-    <section>
+    <>
       <Navbar />
-      <InputContext.Provider value={value}>
-        <InputForm />
-        <QrCode />
-      </InputContext.Provider>
-    </section>
+      <section className="bg-slate-800 h-screen">
+        <InputContext.Provider value={value}>
+          <InputForm />
+          <QrCode />
+        </InputContext.Provider>
+      </section>
+      <Footer />
+    </>
   );
 };
 
