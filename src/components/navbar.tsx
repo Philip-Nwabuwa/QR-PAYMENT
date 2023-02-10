@@ -1,7 +1,7 @@
-import X from "../assets/x.svg";
+import { AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
   return (
-    <div className="bg-black text-white w-full h-20 flex items-center justify-center uppercase">
+    <div className="bg-slate-900 text-white w-full h-16 flex items-center justify-center uppercase">
       <div className="flex w-[95%] justify-between items-center">
         <div className="text-2xl">QR Generator</div>
         <ul className="md:flex items-center hidden">
@@ -18,12 +18,8 @@ const Navbar = () => {
           </a>
         </button>
 
-        <button className="">
-          <img
-            className="fill-current text-white w-10 h-10"
-            src={X}
-            alt="Close Navbar"
-          />
+        <button className="flex md:hidden">
+          <AiOutlineMenu className="text-3xl " />
         </button>
       </div>
     </div>
