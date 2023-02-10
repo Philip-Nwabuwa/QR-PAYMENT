@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import { BiArrowBack } from "react-icons/bi";
 
 const about = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div>
@@ -23,6 +26,16 @@ const about = () => {
                 QR-Code-Tiger
               </a>
             </p>
+            <button
+              className=" text-xl font-bold py-2 mt-6 uppercase text-black bg-white rounded-md px-8 hover:bg-gray-200 hover:underline"
+              onClick={() => {
+                navigate(-1);
+              }}
+            >
+              <div className="flex items-center">
+                <BiArrowBack className="mr-2" /> go back
+              </div>
+            </button>
           </div>
         </div>
         <Footer />
