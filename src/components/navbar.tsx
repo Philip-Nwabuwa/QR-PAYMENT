@@ -58,7 +58,7 @@ const Navbar = () => {
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-slate-800 text-white font-bold p-4 pl-5 ease-in duration-500"
-              : "fixed left-[-200%] top-0 ease-in duration-500"
+              : " hidden"
           }
         >
           <div className="z-[100] mt-6 ">
@@ -74,7 +74,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-8">
-              <p className="w-[85%] md:w-[90%] py-2 text-2xl">
+              <p className="w-[85%] md:w-[90%] py-2 text-xl">
                 Let's build something legendary together
               </p>
             </div>
